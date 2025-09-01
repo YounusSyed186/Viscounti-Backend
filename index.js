@@ -6,6 +6,8 @@ require('dotenv').config();
 
 const menuRoutes = require('./Routes/MenuRoutes');
 const imageRoutes = require('./Routes/imageRoutes');
+const offerBadgeRoutes = require("./Routes/offerBadgeRoutes");
+
 
 const app = express();
 app.use(cors());
@@ -17,6 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use('/api/menu', menuRoutes);
 app.use('/api', imageRoutes); 
+app.use("/api/offer-badges", offerBadgeRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
