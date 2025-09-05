@@ -5,6 +5,7 @@ const menuItemSchema = new mongoose.Schema({
     type: String,
     required: true,
     enum: [
+      "menu fisso",
       "pizze-tradizionali",
       "pizze-speciali",
       "calzoni",
