@@ -10,7 +10,10 @@ const menuItemSchema = new mongoose.Schema({
       "calzoni",
       "kebab-panini",
       "burgers",
-      "bibite"
+      "bibite",
+      "fritte",
+      "Indian cuisine",
+      "dolco"
     ],
   },
   name: {
